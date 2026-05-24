@@ -1055,9 +1055,18 @@ window.SubscriptionsManager = (function () {
             </div>
             <div id="arxiv-admin-quick-run-hint" class="dpr-task-hint">先在上方勾选常规词条。</div>
             <div class="dpr-task-action-grid">
-              <button id="arxiv-admin-quick-run-10d-btn" class="chat-quick-run-item" type="button">10 天论文</button>
-              <button id="arxiv-admin-quick-run-30d-btn" class="chat-quick-run-item" type="button">30 天速览</button>
-              <button id="arxiv-admin-quick-run-30d-standard-btn" class="chat-quick-run-item" type="button">30 天精读</button>
+              <button id="arxiv-admin-quick-run-10d-btn" class="chat-quick-run-item" type="button">
+                <span class="dpr-task-action-title">10 天论文</span>
+                <span class="dpr-task-action-cost">约 ¥0.10</span>
+              </button>
+              <button id="arxiv-admin-quick-run-30d-btn" class="chat-quick-run-item" type="button">
+                <span class="dpr-task-action-title">30 天速览</span>
+                <span class="dpr-task-action-cost">约 ¥0.20</span>
+              </button>
+              <button id="arxiv-admin-quick-run-30d-standard-btn" class="chat-quick-run-item" type="button">
+                <span class="dpr-task-action-title">30 天精读</span>
+                <span class="dpr-task-action-cost">约 ¥0.50</span>
+              </button>
             </div>
             <div id="arxiv-admin-quick-run-msg" class="chat-quick-run-msg"></div>
 

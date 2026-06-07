@@ -27,7 +27,7 @@ subscriptions:
   keyword_recall_mode: or
   intent_profiles:
     - tag: self-evolve
-      description: autoresearch
+      description: 自进化智能体
       enabled: true
       paper_sources:
         - arxiv
@@ -71,7 +71,7 @@ subscriptions:
           enabled: true
           source: manual
           note: ''
-      updated_at: '2026-06-07T11:27:08.087Z'
+      updated_at: '2026-06-07T11:28:54.714Z'
 source_backends:
   arxiv:
     papers_table: arxiv_papers

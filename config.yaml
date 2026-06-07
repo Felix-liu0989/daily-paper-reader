@@ -25,3 +25,65 @@ subscriptions:
     stage: A
     diff_threshold_pct: 15
   keyword_recall_mode: or
+  intent_profiles:
+    - tag: self-evolve
+      description: autoresearch
+      enabled: true
+      paper_sources:
+        - arxiv
+      keywords:
+        - keyword: self-evolving agent
+          keyword_cn: 自进化智能体
+          query: self-evolving intelligent agent with adaptive capabilities
+        - keyword: continual learning agent
+          keyword_cn: 持续学习智能体
+          query: continual learning agent without catastrophic forgetting
+        - keyword: self-improving agent
+          keyword_cn: 自我改进智能体
+          query: self-improving agent through reinforcement learning
+        - keyword: reinforcement learning
+          keyword_cn: 强化学习
+          query: reinforcement learning for agent self-evolution
+        - keyword: autonomous research systems
+          keyword_cn: 自主研究系统
+          query: autonomous research systems and their design
+        - keyword: autonomous experimentation
+          keyword_cn: 自主实验
+          query: autonomous experimentation in scientific discovery
+      intent_queries:
+        - query: self evolving agent architecture design
+          query_cn: 自进化智能体架构设计
+          enabled: true
+          source: manual
+          note: ''
+        - query: self evolving agent reinforcement learning
+          query_cn: 自进化智能体强化学习
+          enabled: true
+          source: manual
+          note: ''
+        - query: How do self evolving AI systems conduct autonomous research?
+          query_cn: 自演进人工智能系统如何自主进行研究？
+          enabled: true
+          source: manual
+          note: ''
+        - query: What are key components of an autonomous research system?
+          query_cn: 自主研究系统的关键组成部分是什么？
+          enabled: true
+          source: manual
+          note: ''
+      updated_at: '2026-06-07T11:27:08.087Z'
+source_backends:
+  arxiv:
+    papers_table: arxiv_papers
+    use_vector_rpc: true
+    vector_rpc: match_arxiv_papers
+    vector_rpc_exact: match_arxiv_papers_exact
+    use_bm25_rpc: true
+    bm25_rpc: match_arxiv_papers_bm25
+    sync_table: arxiv_sync_status
+    sync_success_value: success
+    schema: public
+    kind: supabase
+    enabled: true
+    url: https://lyucdwgefyfbmaiopjbk.supabase.co
+    anon_key: sb_publishable_lX-oi64Uxyd7SIVv3_w2Uw_MTOojeKq
